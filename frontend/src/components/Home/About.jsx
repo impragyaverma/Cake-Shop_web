@@ -12,11 +12,7 @@ const About = () => {
         <article>
           <h4>The Cake Shop</h4>
           <p>
-<<<<<<< HEAD
-            Established in 2024, The Cake Shop has revolutionized the way people
-=======
             Established in 2025, The Cake Shop has revolutionized the way people
->>>>>>> a342288 (Updated project with latest changes)
             experience e-retailing of cakes, flowers, gifts, and more. With a
             focus on providing an exclusive range of high-quality goodies and
             reliable doorstep delivery services, we ensure a seamless shopping
@@ -27,19 +23,14 @@ const About = () => {
             one-stop solution for all gifting needs!
           </p>
 
-<<<<<<< HEAD
           <h4 className="secondHeading">Explore More With Us</h4>
-=======
-          <h4 className="secondHeading">Explore More With Me</h4>
->>>>>>> a342288 (Updated project with latest changes)
           <Link to="/explore">
             <RiFindReplaceLine size={24} />
           </Link>
         </article>
 
         <div className="founder-section">
-<<<<<<< HEAD
-          <h2>Meet Our Founders</h2>
+          <h2>Meet with Founder</h2>
           <article>
             <div className="founder-details">
               <img src={founderImage} alt="Founders" className="founder-image" />
@@ -47,20 +38,8 @@ const About = () => {
             </div>
 
             <p>
-              We are Pragya and Nishi Sharma, the proud founders of The Cake
-              Shop. Our mission is to spread joy and sweetness across India
-=======
-          <h2>Meet with Founder</h2>
-          <article>
-            <div className="founder-details">
-              <img src={founderImage} alt="Founders" className="founder-image" />
-              <h3>Pragya</h3>
-            </div>
-
-            <p>
               I am Pragya , the proud founder of The Cake
-              Shop. My mission is to spread joy and sweetness across India
->>>>>>> a342288 (Updated project with latest changes)
+              Shop. Our mission is to spread joy and sweetness across India
               with every cake and gift delivered. Affiliated with the ultimate
               standard of taste and quality, we’re here to make every occasion
               special for you.
