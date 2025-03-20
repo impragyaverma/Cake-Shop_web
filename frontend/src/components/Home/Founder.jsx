@@ -15,7 +15,7 @@ const animation  = {
 <<<<<<< HEAD
         <h3>Pragya and Nishi</h3>
         <p>
-          Hey Everyone, we are Pragya and Nishi Sharma, the founder of
+          Hey Everyone, I am Pragya , the founder of
           <br/> 
           <span>THE CAKE SHOP</span> 
           <br />
