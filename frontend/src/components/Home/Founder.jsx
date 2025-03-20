@@ -13,7 +13,7 @@ const animation  = {
       <motion.div {...animation}>
         <img src={founder} alt="Founder" height={200} />
 <<<<<<< HEAD
-        <h3>Pragya and Nishi</h3>
+        <h3>Pragya Verma</h3>
         <p>
           Hey Everyone, I am Pragya , the founder of
           <br/> 
