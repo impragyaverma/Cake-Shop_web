@@ -8,8 +8,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
     "start": "NODE_ENV=production node server.js",
     "dev": "NODE_ENV=development nodemon server.js"
+=======
+    "start": "cross-env NODE_ENV=production node server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js"
+>>>>>>> a342288 (Updated project with latest changes)
   },
   "keywords": [],
   "author": "",
@@ -23,8 +28,16 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.13.0",
     "mongoose": "^7.4.4",
+<<<<<<< HEAD
     "nodemon": "^3.0.1",
     "razorpay": "^2.9.2",
     "server": "file:"
+=======
+    "razorpay": "^2.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "cross-env": "^7.0.3"
+>>>>>>> a342288 (Updated project with latest changes)
   }
 }
