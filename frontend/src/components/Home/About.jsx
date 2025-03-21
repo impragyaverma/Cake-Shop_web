@@ -30,7 +30,11 @@ const About = () => {
         </article>
 
         <div className="founder-section">
+<<<<<<< HEAD
           <h2>Meet With The Founder</h2>
+=======
+          <h2>Meet with Founder</h2>
+>>>>>>> 37707f8cda4d141e6671ce2afb5bf01db541dc9a
           <article>
             <div className="founder-details">
               <img src={founderImage} alt="Founders" className="founder-image" />
@@ -38,7 +42,11 @@ const About = () => {
             </div>
 
             <p>
+<<<<<<< HEAD
               I am Pragya Verma, the proud founder of The Cake
+=======
+              I am Pragya , the proud founder of The Cake
+>>>>>>> 37707f8cda4d141e6671ce2afb5bf01db541dc9a
               Shop. Our mission is to spread joy and sweetness across India
               with every cake and gift delivered. Affiliated with the ultimate
               standard of taste and quality, we’re here to make every occasion
