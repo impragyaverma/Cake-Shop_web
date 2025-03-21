@@ -1,11 +1,13 @@
 import express, { urlencoded } from "express";
 import dotenv from "dotenv";
-import { errorMiddleware } from "./middlewares/errorMiddleware.js";
 import cors from "cors";
+import { errorMiddleware } from "./middlewares/errorMiddleware.js";
 
+// Initialize app
 const app = express();
 export default app;
 
+// Load environment variables
 dotenv.config({
   path: "./config/config.env",
 });
@@ -14,30 +16,13 @@ dotenv.config({
 app.use(
   cors({
     origin: "*",
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], 
-    allowedHeaders: ["Content-Type", "Authorization"], 
-    credentials: true, 
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   })
 );
 
-// app.use((req, res, next) => {
-//   res.setHeader(
-//     "Access-Control-Allow-Origin",
-//     "https://vishucakeshop.netlify.app"
-//   );
-
-//   res.setHeader(
-//     "Access-Control-Allow-Methods",
-//     "GET, POST, PUT, DELETE, OPTIONS"
-//   );
-
-//   next();
-// });
-
-// app.use(
-//   cors({ credentials: true, origin: "https://vishucakeshop.netlify.app" })
-// );
-
+// Body parsers
 app.use(express.json());
 app.use(
   urlencoded({
@@ -45,18 +30,22 @@ app.use(
   })
 );
 
+// Trust proxy (for deployment)
 app.set("trust proxy");
 
-// Importing Routes
+// ✅ Import Routes
 import userRoute from "./routes/userRoute.js";
 import orderRoute from "./routes/ordersRoute.js";
 import getMyOrdersRoute from "./routes/ordersRoute.js";
 import getOrderDetailsRoute from "./routes/ordersRoute.js";
+import recommendationRoutes from "./routes/recommendationRoutes.js"; // ✅ Your recommendation route
 
+// ✅ Use Routes
 app.use("/api/v1", userRoute);
 app.use("/api/v1", orderRoute);
 app.use("/api/v1", getMyOrdersRoute);
 app.use("/api/v1", getOrderDetailsRoute);
+app.use("/api/v1/recommendations", recommendationRoutes); // ✅ Using recommendation route
 
-// Using Error Middleware
+// ✅ Error Handling Middleware
 app.use(errorMiddleware);

@@ -3,18 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "engines": {
-    "node": "14.21.3"
+    "node": "16.x"
   },
   "main": "index.js",
   "type": "module",
   "scripts": {
-<<<<<<< HEAD
-    "start": "NODE_ENV=production node server.js",
-    "dev": "NODE_ENV=development nodemon server.js"
-=======
     "start": "cross-env NODE_ENV=production node server.js",
     "dev": "cross-env NODE_ENV=development nodemon server.js"
->>>>>>> a342288 (Updated project with latest changes)
   },
   "keywords": [],
   "author": "",
@@ -22,22 +17,14 @@
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "crypto": "^1.0.1",
     "dotenv": "^16.4.7",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.13.0",
     "mongoose": "^7.4.4",
-<<<<<<< HEAD
     "nodemon": "^3.0.1",
-    "razorpay": "^2.9.2",
-    "server": "file:"
-=======
     "razorpay": "^2.9.2"
-  },
-  "devDependencies": {
-    "nodemon": "^3.0.1",
-    "cross-env": "^7.0.3"
->>>>>>> a342288 (Updated project with latest changes)
   }
 }

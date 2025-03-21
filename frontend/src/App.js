@@ -5,6 +5,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Contact from "./components/Contact/Contact";
 import About from "./components/Home/About";
+import Recommendations from "./components/Home/Recommendations";
 import Cart from "./components/cart/Cart";
 import Shipping from "./components/cart/Shipping";
 import ConfirmOrder from "./components/cart/ConfirmOrder";
@@ -29,6 +30,7 @@ import "./styles/app.scss";
 import "./styles/header.scss";
 import "./styles/home.scss";
 import "./styles/about.scss";
+import "./styles/recommendations.scss";
 import "./styles/founder.scss";
 import "./styles/menu.scss";
 import "./styles/footer.scss";
@@ -77,6 +79,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/recommendations" element={<Recommendations/>}/>
         <Route path="/cart" element={<Cart />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/paymentsuccess" element={<PaymentSuccess />} />

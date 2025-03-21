@@ -17,11 +17,9 @@ const Menu = () => {
           dispatch({ type: "calculatePrice" });
           toast.success("Added to Cart");
         } else {
-<<<<<<< HEAD
           toast.error("Login to continue...");
-=======
+
           toast.error("Login to continue ....");
->>>>>>> a342288 (Updated project with latest changes)
         }
 
         break;
