@@ -2,7 +2,7 @@
 
 Team Name- Pragya
 # The Cake Shop
-
+ 
 Welcome to The Cake Shop project, a feature-rich online cake store built using the MERN stack (MongoDB, Express.js, React, and Node.js). This application allows users to explore, order, and enjoy delicious cakes, both through cash-on-delivery and secure online payments via Razorpay.
 
 ## Features
